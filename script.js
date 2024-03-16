@@ -1,15 +1,11 @@
-function randomcolor(){
-    return Math.round(Math.random()*255)
+let btnEl=document.getElementById("btn")
+function chengeclr() {
+  let randomval=() =>Math.round(Math.random()*255);
+  let clrval=`rgb(${randomval()},${randomval()},${randomval()})`;
+  document.body.style.backgroundColor=clrval;
+  btnEl.textContent=clrval;
 }
-console.log(randomcolor())
-let colorval="rgb("randomcolor(),randomcolor(),randomcolor()")"
-console.log(colorval)
 
-function chengeclr(){
-    let str=`rgb(${randomcolor()},${randomcolor()},${randomcolor()})`;
-    document.body.style.backgroundColor = str;
-    console.log(str)
-}
 
 
 
